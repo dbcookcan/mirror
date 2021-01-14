@@ -1,0 +1,15 @@
+#
+# https://blog.reboost.net/kiosk-display-on-raspbian-jessie/
+#
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+#@xscreensaver -no-splash
+@point-rpi
+# Run DAKBoard in kiosk mode
+# - comment out "@xscreensaver" above
+@xset s off
+@xset s noblank
+@xset -dpms
+#@unclutter -idle 0
+@/home/pi/dbc
+
